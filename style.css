@@ -1,7 +1,4 @@
-body,
-h1,
-div,
-img {
+body, h1, div, img {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,34 +9,34 @@ body {
     background-color: #f4f4f4;
     text-align: center;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 
 #countdown {
-    margin: 0 auto;
     padding: 20px;
     background-color: #e66262;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: 100%; 
 }
 
 #timer {
     font-size: 2em;
-    margin-top: 10px;
 }
 
 #wolf-bike {
-    width: 100%;
     max-width: 75%;
     height: auto;
-    margin-top: 20px;
     border-radius: 10px;
 }
 
-
 footer {
-    margin-top: 30px;
     padding: 20px 0;
     background-color: #e66262;
+    width: 100%;
     text-align: center;
     font-weight: 700;
 }
@@ -50,9 +47,12 @@ footer a {
     margin: 0 5px;
 }
 
-
 @media (max-width: 600px) {
     #timer {
         font-size: 1.5em;
+    }
+
+    #wolf-bike {
+        max-width: 100%;
     }
 }
