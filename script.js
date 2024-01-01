@@ -1,5 +1,4 @@
 const TARGET_DATE = new Date("Jan 8, 2024 18:00:00").getTime();
-// const TARGET_DATE = new Date("Dec 30, 2023 19:25:00").getTime();
 const countdownImage = document.getElementById("wolf-bike");
 
 function getTimeLeft(milliseconds) {
@@ -34,7 +33,7 @@ function returnTimer(remainingTime) {
 
 function decreaseColour(remainingTime) {
     const totalDuration = TARGET_DATE - new Date("Dec 30, 2023 00:00:00").getTime();
-    const saturation = (remainingTime / totalDuration) * 10000;
+    const saturation = (remainingTime / totalDuration) * 100;
     countdownImage.style.filter = `grayscale(${100 - saturation}%)`;
 }
 const updateCountdown = () => {
